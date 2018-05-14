@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Remind to get</title>
-  </head>
-  <body>
 
-    <div class="todo-container">
-    			<h2>Items:</h2>
-    			<div class="todo-items">
-    				<ul>
-    					<li><label><input type="checkbox"><i></i><span>First Item</span><a href='#'>–</a></label></li>
-    				</ul>
-    			</div>
-    			<input type="text" class="todo-new" placeholder="Get this item with you">
-    		</div>
+<head>
+  <meta charset="utf-8">
+  <title>Remind to get</title>
+</head>
 
-<script src="index.js" charset="utf-8"></script>
+<body>
 
-  </body>
+<div class="container is-fluid">
+  <nav class="panel">
+    <p class="panel-heading">
+      Remind to get
+    </p>
+
+    <a class="panel-block is-active">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      Grill
+    </a>
+
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      Beer
+    </a>
+
+    <div class="panel-block">
+      <p class="control has-icons-left">
+        <input class="input is-small" type="text" placeholder="Write new item..">
+        <span class="icon is-small is-left">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </span>
+      </p>
+    </div>
+
+    <div class="panel-block">
+      <button class="button is-link is-outlined is-fullwidth">
+        Add item
+      </button>
+    </div>
+  </nav>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
 </html>

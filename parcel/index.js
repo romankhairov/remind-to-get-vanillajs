@@ -9,6 +9,19 @@ $addItem.addEventListener('click', function() {
   // console.log("Test");
 });
 
-function addItemTodo(whatEver) {
-  console.log(whatEver);
+function addItemTodo(inputText) {
+
+  // var item = document.createElement('a');
+  // item.classList.add('panel-block');
+  //
+  //   var span = document.createElement('span');
+  //   item.classList.add('panel-block')
+
+
+
+
+    item.innerText = inputText;
+
+
+
 }

@@ -1,27 +1,28 @@
 require ('bulma');
 
-var $addItem = document.querySelector('.add-item');
-var $writeItem = document.querySelector('.write-item');
+const $addItem = document.querySelector('.add-item');
+const $writeItem = document.querySelector('.write-item');
+const $taskList = document.querySelector('.task-list');
 
 $addItem.addEventListener('click', function() {
   var value = $writeItem.value;
   if (value) addItemTodo(value);
-  // console.log("Test");
 });
 
 function addItemTodo(inputText) {
 
-  // var item = document.createElement('a');
-  // item.classList.add('panel-block');
-  //
-  //   var span = document.createElement('span');
-  //   item.classList.add('panel-block')
+const itemTemlate = `
+  <li class="panel-block">
+      <div class="container is-fluid">
+          ${inputText}
+      </div>
+  </li>
+`;
+
+$taskList.innerHTML += itemTemlate;
 
 
-
-
-    item.innerText = inputText;
-
-
-
+  // var text = document.createElement("div");
+  // text.classList.add('container is-fluid');
+  // text.innerText = inputText;
 }

@@ -2,84 +2,71 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Remind to get</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remind to get</title>
+<link rel="stylesheet" href="index.css"></head>
 
 <body>
 
-<div class="columns">
-    <div class="column"></div>
+<div class="container is-fluid">
+  <nav class="panel">
+    <p class="panel-heading">
+      Remind to get
+    </p>
 
-    <div class="column is-half">
-        <div class="container is-fluid">
-            <nav class="panel">
-                <p class="panel-heading">
-                    Remind to get
-                </p>
-
-                <div class="panel-tabs">
-                    <nav class="breadcrumb is-centered has-bullet-separator" aria-label="breadcrumbs">
-                        <ul>
-                            <li class="is-active"><a href="#" aria-current="page">BBQ</a></li>
-                            <li><a href="#">Bike trip</a></li>
-                            <li><a href="#">Gym!</a></li>
-                            <li><a href="#">Swimming pool</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <a class="panel-block is-fluid">
-                    <div class="container is-fluid">
-                        Grill
-                    </div>
-                </a>
-
-                <a class="panel-block">
-                    <div class="container is-fluid">
-                        Beer
-                    </div>
-                </a>
-
-                <a class="panel-block center">
-                    <div class="container is-fluid">
-                        Meat
-                    </div>
-                </a>
-
-                <a class="panel-block">
-                    <div class="container is-fluid">
-                        New Item
-                    </div>
-                </a>
-
-                <div class="panel-block">
-                    <p class="control has-icons-left">
-                        <input class="input is-small write-item" type="text" placeholder="Write new item..">
-                        <span class="icon is-small is-left">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </span>
-                    </p>
-                </div>
-
-                <div class="panel-block">
-                    <button class="button is-link is-outlined is-fullwidth add-item">
-                        Add item
-                    </button>
-                </div>
-            </nav>
-        </div>
-
-    </div>
-
-
-    <div class="column"></div>
-
+    <div class="panel-tabs">
+    <nav class="breadcrumb is-centered has-bullet-separator" aria-label="breadcrumbs">
+      <ul>
+        <li class="is-active"><a href="#" aria-current="page">BBQ</a></li>
+        <li><a href="#">Bike trip</a></li>
+        <li><a href="#">Gym</a></li>
+        <li><a href="#">Swimming pool</a></li>
+      </ul>
+    </nav>
 </div>
 
-<script src="index.js" charset="utf-8"></script>
+
+
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      Grill
+    </a>
+
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      Beer
+    </a>
+
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      Meat
+    </a>
+
+    <div class="panel-block">
+      <p class="control has-icons-left">
+        <input class="input is-small write-item" type="text" placeholder="Write new item..">
+        <span class="icon is-small is-left">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </span>
+      </p>
+    </div>
+
+    <div class="panel-block">
+      <button class="button is-link is-outlined is-fullwidth add-item">
+        Add item
+      </button>
+    </div>
+  </nav>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
 
 </body>
 

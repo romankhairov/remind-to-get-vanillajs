@@ -21,8 +21,4 @@ const itemTemlate = `
 
 $taskList.innerHTML += itemTemlate;
 
-
-  // var text = document.createElement("div");
-  // text.classList.add('container is-fluid');
-  // text.innerText = inputText;
 }

@@ -16,7 +16,14 @@ const itemTemlate = `
       <div class="container is-fluid">
           ${inputText}
       </div>
-      <a class="delete"></a>
+      <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-small is-success is-outlined">Done</a>
+              </p>
+              <p class="control">
+                <a class="delete"></a>
+              </p>
+      </div>
   </li>
 `;
 

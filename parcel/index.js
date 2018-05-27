@@ -16,6 +16,7 @@ const itemTemlate = `
       <div class="container is-fluid">
           ${inputText}
       </div>
+      <a class="delete"></a>
   </li>
 `;
 

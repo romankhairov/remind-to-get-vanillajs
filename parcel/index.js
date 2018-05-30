@@ -27,6 +27,32 @@ const itemTemlate = `
   </li>
 `;
 
-$taskList.innerHTML += itemTemlate;
+var list = document.getElementById('task-list');
+
+var node = document.createElement('li');
+node.innerText = inputText;
+
+var buttons = document.createElement('div');
+buttons.classList.add('buttons');
+
+
+
+buttons.appendChild
+
+list.insertBefore(item, list.childNodes[0]);
+
+
+// var node = document.createElement("li");
+//     var textnode = document.createTextNode(itemTemlate);
+//     node.insertBefore(textnode);
+//     document.getElementById("myList").appendChild(node);
+
+
+
+// $taskList.innerHTML += itemTemlate;
+// itemTemlate.appendChild($taskList);
+
+// var list =
+
 
 }

@@ -34,12 +34,15 @@ var textBlock = document.createElement('div');
 textBlock.classList.add('container', 'is-fluid');
 textBlock.innerText = inputText;
 
+var control = document.createElement('p');
+control.classList.add('control');
+
 var buttons = document.createElement('div');
 buttons.classList.add('field', 'is-grouped');
 
 var done = document.createElement('button');
 done.classList.add('button', 'is-small', 'is-success', 'is-outlined');
-done.innerText = "Complete";
+done.innerText = "Done";
 
 var remove = document.createElement('button');
 remove.classList.add('delete', 'remove-btn');
@@ -47,8 +50,9 @@ remove.innerText = "Done";
 
 
 
-buttons.appendChild(done);
-buttons.appendChild(remove);
+buttons.appendChild(control);
+control.appendChild(done);
+control.appendChild(remove);
 newItem.appendChild(textBlock);
 newItem.appendChild(buttons);
 

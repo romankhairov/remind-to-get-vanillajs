@@ -11,7 +11,7 @@ $addItem.addEventListener('click', function() {
 
 function addItemTodo(inputText) {
 
-const itemTemlate = `
+const itemTemplate = `
   <li class="panel-block">
       <div class="container is-fluid">
           ${inputText}
@@ -27,32 +27,11 @@ const itemTemlate = `
   </li>
 `;
 
-var list = document.getElementById('task-list');
+var list = document.getElementById("task-list");
 
-var node = document.createElement('li');
-node.innerText = inputText;
+var newItem = document.createElement("li");
+newItem.innerHTML = itemTemplate;
 
-var buttons = document.createElement('div');
-buttons.classList.add('buttons');
-
-
-
-buttons.appendChild
-
-list.insertBefore(item, list.childNodes[0]);
-
-
-// var node = document.createElement("li");
-//     var textnode = document.createTextNode(itemTemlate);
-//     node.insertBefore(textnode);
-//     document.getElementById("myList").appendChild(node);
-
-
-
-// $taskList.innerHTML += itemTemlate;
-// itemTemlate.appendChild($taskList);
-
-// var list =
-
+list.insertBefore(newItem, list.childNodes[0]);
 
 }

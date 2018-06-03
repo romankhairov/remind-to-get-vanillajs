@@ -11,7 +11,11 @@ $addItem.addEventListener('click', function() {
 });
 
 function removeItem(e) {
-  console.log(e);
+  // console.log(this.parentNode.parentNode.parentNode);
+  var item = this.parentNode.parentNode.parentNode;
+  var parent = item.parentNode;
+
+  parent.removeChild(item);
 }
 
 function addItemTodo(inputText) {
@@ -23,6 +27,9 @@ function addItemTodo(inputText) {
 //       </div>
 //   </li>
 // `;
+
+
+
 
 var list = document.getElementById("task-list");
 
@@ -46,8 +53,8 @@ done.innerText = "Done";
 
 var remove = document.createElement('button');
 remove.classList.add('delete', 'remove-btn');
-remove.innerText = "Done";
 
+remove.addEventListener('click', removeItem);
 
 
 buttons.appendChild(control);

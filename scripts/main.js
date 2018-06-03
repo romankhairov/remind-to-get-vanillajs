@@ -14,8 +14,16 @@ function removeItem(e) {
   // console.log(this.parentNode.parentNode.parentNode);
   var item = this.parentNode.parentNode.parentNode;
   var parent = item.parentNode;
-
   parent.removeChild(item);
+}
+
+function doneItem() {
+  var item = this.parentNode.parentNode.parentNode;
+  var parent = item.parentNode;
+  var id = parent.id;
+
+  var target = (id === 'todo') ? document.getElementById('done'):document.getElementById('to-get');
+
 }
 
 function addItemTodo(inputText) {
@@ -28,11 +36,7 @@ function addItemTodo(inputText) {
 //   </li>
 // `;
 
-
-
-
-var list = document.getElementById("task-list");
-
+var list = document.getElementById("to-get");
 
 var newItem = document.createElement('li');
 newItem.classList.add('panel-block');
@@ -62,7 +66,6 @@ control.appendChild(done);
 control.appendChild(remove);
 newItem.appendChild(textBlock);
 newItem.appendChild(buttons);
-
 
 
 list.insertBefore(newItem, list.childNodes[0]);

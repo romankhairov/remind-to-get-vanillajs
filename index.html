@@ -24,36 +24,52 @@
                   Remind to get
                 </h1>
                 <h2 class="subtitle">
-                  your to-do list
+                  your to-do list snapped to place
                 </h2>
               </div>
             </div>
           </section>
+          <section>
+            <div class="columns">
+
+        <div class="column is-one-third">
+          <aside class="menu">
+          <p class="menu-label panel-block">
+            Places
+          </p>
+          <ul class="menu-list is-outlined">
+            <li class=""><a>Vacations</a></li>
+            <li><a>Work</a></li>
+            <li>
+              <div class="panel-block">
+                <p class="control has-icons-left">
+                  <input class="input is-small write-item" type="text" onfocus="this.value=''" placeholder="Write new item..">
+                  <span class="icon is-small is-left">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="add-tab button is-link is-outlined is-fullwidth">
+                New tab
+              </button>
+            </li>
+            <li>
+              <button class="button is-link is-outlined is-fullwidth">
+                Delete tab
+              </button>
+            </li>
+          </ul>
+          </aside>
+        </div>
 
 
+        <div class="column">
 
-          <div class="panel-tabs">
-            <nav class="breadcrumb is-centered has-bullet-separator" aria-label="breadcrumbs">
-              <ul>
-                <li class="is-active"><a href="#" aria-current="page">BBQ</a></li>
-
-                <li>
-                  <button class="add-tab button is-link is-outlined is-fullwidth">
-                    New tab
-                  </button>
-                </li>
-                <li>
-                  <button class="button is-link is-outlined is-fullwidth">
-                    Delete tab
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <ul class"task-list" id="to-get"></li>
-
-            <!-- <li class="panel-block">
+          <section>
+          <ul class"task-list" id="to-get">
+            <li class="panel-block">
                 <div class="container is-fluid">
                     Text
                 </div>
@@ -62,26 +78,48 @@
                           <a class="button is-small is-success is-outlined">Done</a>
                           <a class="delete remove-btn"></a>
                         </p>
-                </div> -->
+                </div>
+            </li>
+            </ul>
 
-          <ul class"task-list" id="done"></li>
+            <ul class"task-list" id="done"></ul>
 
-          </ul>
+            <div class="panel-block">
+              <p class="control has-icons-left">
+                <input class="input is-small write-item" type="text" onfocus="this.value=''" placeholder="Write new item..">
+                <span class="icon is-small is-left">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </span>
+              </p>
+            </div>
 
-          <div class="panel-block">
-            <p class="control has-icons-left">
-              <input class="input is-small write-item" type="text" onfocus="this.value=''" placeholder="Write new item..">
-              <span class="icon is-small is-left">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </span>
-            </p>
-          </div>
+            <!-- <div class="panel-block">
+              <button class="button is-link is-outlined is-fullwidth add-item">
+                  Add item
+              </button>
+            </div>
 
-          <div class="panel-block">
-            <button class="button is-link is-outlined is-fullwidth add-item">
-                Add item
-            </button>
-          </div>
+
+          </section>
+
+
+        </div>
+
+            </div>
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
         </nav>
       </div>
 
